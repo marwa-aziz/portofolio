@@ -16,42 +16,42 @@ const NAV_LINKS = ["About", "Skills", "Projects", "Contact"];
 const SKILLS = [
   { name: "HTML & CSS", level: 90, color: COLORS.orange },
   { name: "JavaScript", level: 85, color: COLORS.yellow },
-  { name: "React", level: 80, color: COLORS.cyan },
+  { name: "Angular", level: 80, color: COLORS.cyan },
   { name: "TypeScript", level: 70, color: COLORS.purple },
-  { name: "Tailwind CSS", level: 85, color: COLORS.pink },
+  { name: "Figma", level: 85, color: COLORS.pink },
   { name: "Git & GitHub", level: 75, color: COLORS.green },
-  { name: "Figma", level: 65, color: COLORS.pink },
-  { name: "Node.js", level: 60, color: COLORS.green },
+  { name: "Tailwind CSS", level: 65, color: COLORS.pink },
+  { name: "React", level: 60, color: COLORS.green },
 ];
 
 const PROJECTS = [
   {
-    title: "Weather App",
+    title: "Forex website",
     desc: "React app that fetches real-time weather using OpenWeather API with animated icons.",
     tags: ["React", "API", "CSS"],
     color: COLORS.cyan,
-    emoji: "🌤️",
+    emoji: "📉",
   },
   {
-    title: "Task Manager",
+    title: "Nutrition / healthy food website",
     desc: "Full CRUD todo app with drag-and-drop, local storage persistence, and filters.",
     tags: ["React", "Hooks", "LocalStorage"],
     color: COLORS.purple,
-    emoji: "✅",
+    emoji: "🥑",
   },
   {
-    title: "Portfolio v1",
+    title: "Gym website",
     desc: "My first portfolio site built with pure HTML/CSS — responsive and accessible.",
     tags: ["HTML", "CSS", "Responsive"],
     color: COLORS.pink,
-    emoji: "🎨",
+    emoji: "💪",
   },
   {
-    title: "Recipe Finder",
+    title: "trading company website",
     desc: "Search thousands of recipes by ingredient using Spoonacular API.",
     tags: ["React", "API", "Tailwind"],
     color: COLORS.orange,
-    emoji: "🍳",
+    emoji: "🌍",
   },
 ];
 
@@ -549,7 +549,7 @@ function ContactSection() {
 
   return (
     <section id="contact" style={{ ...sectionStyle, background: "rgba(255,255,255,0.02)" }}>
-      <SectionTitle emoji="💌" label="Contact" color={COLORS.pink} />
+      <SectionTitle emoji="📩" label="Contact" color={COLORS.pink} />
 
       <div style={{ maxWidth: 560, margin: "0 auto" }}>
         <p style={{ ...bodyText, textAlign: "center", marginBottom: "2rem", color: "rgba(255,255,255,0.6)" }}>
@@ -604,9 +604,9 @@ function ContactSection() {
         {/* Social links */}
         <div style={{ display: "flex", justifyContent: "center", gap: "1.2rem", marginTop: "2.5rem" }}>
           {[
-            { label: "GitHub", href: "#", emoji: "🐙" },
-            { label: "LinkedIn", href: "#", emoji: "💼" },
-            { label: "Twitter", href: "#", emoji: "🐦" },
+            { label: "GitHub", href: "https://github.com/marwa-aziz", emoji: "🐙" },
+            { label: "LinkedIn", href: "https://www.linkedin.com/in/marwa-aziz-9366a7366", emoji: "💼" },
+
           ].map((s) => (
             <a
               key={s.label}
